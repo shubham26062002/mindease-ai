@@ -28,7 +28,7 @@ const PromptForm = () => {
         addConversation(data.prompt, "")
 
         try {
-            const response = await axios.post(import.meta.env.VITE_META_AZURE_FUNCTION_URL, data)
+            const response = await axios.post("https://shubham26062002-generate-prompt-response.azurewebsites.net/api/generate_prompt_response", data)
 
             if (response.status !== 200) {
                 return alert("Something went wrong")
