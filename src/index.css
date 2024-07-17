@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+    @apply h-full text-sm sm:text-base antialiased font-outfit text-black bg-white;
+}
+
+.custom-ring {
+    @apply focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-black focus-visible:ring-offset-0 !important;
+}
